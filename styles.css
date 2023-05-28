@@ -66,13 +66,13 @@ nav a{
 #header-content div:nth-child(3) {
     grid-column: 2/3;
     grid-row: 1/3;
-    justify-self: center;
+    justify-self: start;
     align-self: center;
 }
 
 #header-content img {
-    width: 27em;
-    height: 30em;
+    width: 32em;
+    height: 24em;
   
 }
 
