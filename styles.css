@@ -3,6 +3,7 @@ body{
     font-family: 'Alegreya Sans', sans-serif;
 }
 
+
 nav {
     color: white;
     position: fixed;
@@ -19,8 +20,9 @@ nav {
 header {
     width: 100%;
     position: relative;
-    background-image: url(images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
+    background-image: url(images/abstract-white-banner-background-with-shiny-wavy-lines/11054.jpg);
     background-size: cover;
+    
 
 }
 header, section {
@@ -33,7 +35,7 @@ nav h1 {
     
 }
 nav h1:hover{
-    color: #e6df2f;
+    color: #89acad;
     cursor: pointer;
 }
 
@@ -107,7 +109,7 @@ nav a{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #e6df2f;
+    background-color: #89acad;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out;
   }
@@ -136,7 +138,7 @@ nav a{
     
 }
   #header-content h2 span {
-    color: #f2de04;
+    color: #89acad;
     position: relative;
     right: 1.3em;
   }
@@ -145,14 +147,17 @@ nav a{
     text-decoration: none;
     color: beige;
     padding: 1em;
-    background-color: #ff9100;
+    background-color: #89acad;
     border-radius: 60px;
     position: relative;
     left: 12em;
-    bottom: 2em;
     width: 14em;
     font-size: 1.3em;
     font-weight: 600;
+}
+#contact-link:hover{
+  background-color: #617778;
+  
 }
 
   #header-content div {
@@ -168,7 +173,7 @@ nav a{
   section h2::after {
     content: '';
     position: absolute;
-    width: 7em;
+    width: 90%;
     height: 2px;
     background-color: black;
     left: 0;
@@ -245,6 +250,7 @@ nav a{
   }
   #pictures {
     background-color: white;
+    padding-top: 6em;
   }
 
   .caption {
@@ -268,7 +274,99 @@ nav a{
   .description {
     position: absolute;
     left: 13em;
+  }
+
+  #contact-form {
+    padding-top: 6em;
+  }
+
+  form {
+    height: 70vh;
+    width: 70vw;
+    margin: auto;
     
+  }
+  fieldset{
+    position: relative;
+    background-color: #89acad;
+    color: white;
+    height: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-rows: repeat(1fr, auto)
+  }
+  legend {
+    position: relative;
+   
+    font-size: 3em;
+    padding-bottom: 0.4em;
+  }
+  legend:after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    bottom:0;
+    left:0;
+    height: 2px;
+    background-color: white;
+  }
+
+  label {
+    color: white;
+    
+  }
+  .block-element {
+    display: block;
+  }
+  input, textarea {
+    color: white;
+    border: none;
+    border-bottom: solid white 2px;
+    background-color: inherit;
+  }
+  textarea{
+    width: 80%;
+    height: 5em;
+}
+
+  textarea:focus, input:focus {
+    outline: none;
+  }
+  
+  #name-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #name-section input {
+    width:60%;
+  }
+  #name{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #last-name {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  ::placeholder{
+    color: white;
+  }
+  #email-section span{
+    color: red;
+  }
+
+  button {
+    color: white;
+    width: 5em;
+    height: 2.3em;
+    background-color: inherit;
+    border: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2em;
   }
 
 

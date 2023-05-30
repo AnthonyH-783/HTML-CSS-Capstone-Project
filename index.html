@@ -9,20 +9,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header> <!--Header section starts here-->
+        <header id="header"> <!--Header section starts here-->
             <nav>
                 <h1>Anthony Hani</h1>
 
                 <span>
                     <ul>
-                        <li><a class="hover-underline-animation" href="#">Home Page</a></li>
-                        <li><a class="hover-underline-animation" href="#">Social Media</a></li>
-                        <li><a class="hover-underline-animation" href="#">Pictures</a></li>
-                        <li><a class="hover-underline-animation" href="#">Contact me </a></li>
+                        <li><a class="hover-underline-animation" href="#header">Home Page</a></li>
+                        <li><a class="hover-underline-animation" href="#websites">Social Media</a></li>
+                        <li><a class="hover-underline-animation" href="#pictures">Pictures</a></li>
+                        <li><a class="hover-underline-animation" href="#contact-form">Contact me </a></li>
                     </ul>
                 </span>
 
-                <span id="login"><a class="hover-underline-animation" href="#">Login in</a></span>
+                <span id="login"><a class="hover-underline-animation" href="https://open.appacademy.io/login">Login in</a></span>
             </nav>
 
             <div id="header-content">
@@ -115,7 +115,7 @@
                 <div class="gallery-container">
                 <div>
                     <div class="caption"><p>Lenin</p></div>
-                    <a href="/images/Vladimir_Lenin.jpg" target="_blank"><img src="images/Vladimir_Lenin.jpg"></a>
+                    <a href="/images/Vladimir_Lenin.jpg" target="_blank"><img src="images/Vladimir_Lenin.jpg"/></a>
                     <p class="description">Some text</p>
                 </div>
 
@@ -134,7 +134,7 @@
                 <div>
                     <div class="caption"><p>Einstein</p></div>
                     <a href="/images/einstein.jpg" target="_blank"><img src="images/einstein.jpg"></a>
-                    <p class="desctiption">Some text</p>
+                    <p class="description">Some text</p>
                 </div>
 
                 <div>
@@ -154,26 +154,29 @@
 
             <section id="contact-form">
 
-                <h2>Contact Form</h2>
+                <h2>Contact Me</h2>
 
                 <form action="#" method="post">
                     <fieldset>
-                        <legend>Contact Form</legend>
+                        <div>
+                            <legend>Contact Form</legend>
+                        </div>
+                        
 
                         <div id="name-section">
-                            <label for="name">Name</label>
+                            <label class="block-element" for="name">Name</label>
                             <input type="text" name="firstName" id="name" placeholder="First Name">
-                            <input type="text" name="lastName" placeholder="Last Name">
+                            <input type="text" name="lastName" id="last-name" placeholder="Last Name">
                         </div>
 
                         <div id="email-section">
-                            <label for="email">Email <span>*</span></label>
+                            <label class="block-element" for="email">Email <span>*</span></label>
                             <input type="email" name="email" id="email" placeholder="example@example.com">
                         </div>
 
                         <div id="message-section">
-                            
-                            <textarea>Enter Message:</textarea>
+                            <label for="message" class="block-element">Enter Message:</label>
+                            <textarea></textarea>
 
                         </div>
 
@@ -188,6 +191,10 @@
                                 <label for="isStudent">I am a Student</label>
                             </div>
                         </div>
+                        <button type="submit">
+                            Send <img src="images/icons8-send-glyph-neue-favicons/Web/icons8-send-glyph-neue-32.png">
+
+                        </button>
                     </fieldset>
                 </form>
             </section>
